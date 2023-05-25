@@ -1,1 +1,1 @@
-# fullstack-ebook-hub
+# fullstack-ebook-hub [simple crud from lama dev]

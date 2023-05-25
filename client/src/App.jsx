@@ -1,11 +1,14 @@
 import './App.css'
 import { Outlet } from 'react-router-dom'
+import { Navbar } from './components'
 
 function App() {
 
   return (
     <>
-      <header>This is where you will include the navigation bar</header>
+      <header>
+        <Navbar/>
+      </header>
 
       <main>
         <Outlet/>

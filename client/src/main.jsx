@@ -8,12 +8,15 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import { HomeScreen, SampleScreen } from "./screens/index.js";
+import { CreateBookScreen, HomeScreen, SampleScreen, UpdateBookScreen } from "./screens/index.js";
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App/>}>
       <Route index={true} path="/" element={<HomeScreen/>}/>
+      <Route path="/add" element={<CreateBookScreen/>}/>
+      <Route path="/update" element={<UpdateBookScreen/>}/>
       <Route path="/sample" element={<SampleScreen/>}/>
     </Route>
   )
